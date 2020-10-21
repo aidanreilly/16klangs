@@ -37,7 +37,7 @@ function enc(n, delta)
     sliders[edit+1] = sliders[edit+1] + delta
     --amp_value is the 0 1 scaled value of the slider
     amp_value = util.clamp(((amp_sliders[edit+1] + delta) * .01), 0.0, 1.0)
-    --take the amp_value and apply to each array element
+    --TODO take the amp_value and apply to each array element
     --set_amp(edit, amp_value)
     if sliders[edit+1] > 32 then sliders[edit+1] = 32 end
     if sliders[edit+1] < 0 then sliders[edit+1] = 0 end
