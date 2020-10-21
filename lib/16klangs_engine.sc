@@ -1,4 +1,4 @@
-// Engine_16Sines
+// Engine_16Klangs
 // 16 mono sinewaves
 
 // Inherit methods from CroneEngine
