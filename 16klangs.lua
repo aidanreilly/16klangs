@@ -19,9 +19,9 @@ engine.name = '16Klangs'
 
 function init()
   print("loaded 16Klangs engine")
-  engine.freqs(table.unpack(freq_vales))
-  engine.amps(table.unpack(amp_values))
-  engine.phases(table.unpack(phase_values))
+  --engine.freqs(table.unpack(freq_vales))
+  --engine.amps(table.unpack(amp_values))
+  --engine.phases(table.unpack(phase_values))
 end
 
 

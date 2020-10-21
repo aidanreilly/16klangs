@@ -23,24 +23,23 @@ alloc {
 		amps = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 		phases = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 		// Klangs (freq, phase, amplitude)
-		var osc1 = DynKlang.ar(`[freqs, amps, phases])
-    ];
+		var osc1 = DynKlang.ar(`[[55, 110, 220, 440], [0.3, 0.3, 0.3, 0.3], [0, 0, 0, 0]]);
 		// Create an output object with a mix the klang output
 		Out.ar(out, (osc1).dup);
 	}.play(args: [\out, context.out_b], target: context.xg);
 
 	// Export argument symbols as modulatable paramaters
-	this.addCommand("freqs", "f", { arg msg;
-		synth.set(\freqs, msg[1]);
-	});
+	//this.addCommand("freqs", "f", { arg msg;
+	//	synth.set(\freqs, msg[1]);
+	//});
 
-	this.addCommand("amps", "f", { arg msg;
-		synth.set(\amps, msg[1]);
-	});
+	//this.addCommand("amps", "f", { arg msg;
+	//	synth.set(\amps, msg[1]);
+	//});
 
-	this.addCommand("phases", "f", { arg msg;
-		synth.set(\phases, msg[1]);
-	});
+	//this.addCommand("phases", "f", { arg msg;
+	//	synth.set(\phases, msg[1]);
+	//});
 
 }
 // define a function that is called when the synth is shut down
