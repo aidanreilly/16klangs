@@ -19,9 +19,10 @@ engine.name = '16Klangs'
 
 function init()
   print("loaded 16Klangs engine")
-  engine.freqs(table.unpack(freq_vales))
-  engine.amps(table.unpack(amp_values))
-  engine.phases(table.unpack(phase_values))
+  --TODO is it possible to pass the arrays to SC?
+  --engine.freqs(table.unpack(freq_vales))
+  --engine.amps(table.unpack(amp_values))
+  --engine.phases(table.unpack(phase_values))
 end
 
 
